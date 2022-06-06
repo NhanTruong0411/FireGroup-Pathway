@@ -1,0 +1,119 @@
+.destinations {
+   position: absolute;
+   width: 1170px;
+   height: 593px;
+   left: 135px;
+   top: 990px;
+   // TEXT
+   .text {
+      position: absolute;
+      width: 507px;
+      height: 124px;
+      left: 0px;
+      top: 0px;
+      h2 {
+         font-family: 'Sen';
+         font-style: normal;
+         font-weight: 700;
+         font-size: 42px;
+         line-height: 52px;
+         letter-spacing: -0.02em;
+         color: #05101F;
+         margin-bottom: 16px;
+      }
+      p {
+         width: 507px;
+         height: 56px;
+         font-family: 'Poppins';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 28px;
+         color: #52575F;
+      }
+   }
+   // ICON
+   .icons {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: 42;
+      right: 0;
+      .icon-inactive {
+         &-circle {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 58px;
+            top: 42px;
+         }
+         &-arrow {
+            position: absolute;
+            width: 6px;
+            height: 12px;
+            right: 75px;
+            top: 56px;
+         }
+      }
+      .icon-active {
+         &-circle {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 0px;
+            top: 42px;
+         }
+         &-arrow {
+            position: absolute;
+            width: 6px;
+            height: 12px;
+            right: 17px;
+            top: 56px;
+         }
+      }
+   }
+   // IMAGES
+   .images {
+      position: absolute;
+      top: 179px;
+      width: 240px;
+      display: flex;
+      gap: 0 30px;
+      .card2 {
+         .base {
+            position: absolute;
+            top: 304px;
+            left: 316px;
+            width: 238px;
+            height: 94px;
+            background: rgba(5, 16, 31, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+         }
+         .image-texts {
+            &-above {
+               position: absolute;
+               top: 322px;
+               left: 355px;
+               width: 160px;
+               height: 28px;
+               font-weight: 400;
+               font-size: 16px;
+               line-height: 28px;
+               color: #EFF3FF;
+            }
+            &-under {
+               position: absolute;
+               top: 352px;
+               left: 396px;
+               width: 77px;
+               height: 28px;
+               font-weight: 600;
+               font-size: 16px;
+               line-height: 28px;
+               color: #ffffff;
+            }
+         }
+      }
+   }
+}

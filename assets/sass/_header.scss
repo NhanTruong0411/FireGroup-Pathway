@@ -1,0 +1,227 @@
+.hero {
+   position: absolute;
+   width: 1440px;
+   height: 820px;
+   left: 0px;
+   top: 0px;
+   background: $hero-bg;
+   // HERO MENU
+   &-menu {
+      position: absolute;
+      width: 1170px;
+      height: 50px;
+      left: 135px;
+      top: 36px;
+      display: flex;
+      justify-content: space-between;
+      &-left {
+         flex-basis: 50%;
+         display: flex;
+         align-items: center;
+         gap: 0 40px;
+         .logo {
+            h1 {
+               font-family: $heading-font;
+               font-style: normal;
+               font-weight: 700;
+               font-size: 24px;
+               line-height: 34px;
+            }
+            span {
+               color: $primary-color;
+            }
+         }
+         .search-bar {
+            width: 288px;
+            height: 50px;
+            border: 1px solid #E6E9ED;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            &-icon {
+               i {
+                  color: $primary-color;
+                  margin-left: 18px;
+                  margin-right: 16px;
+               }
+            }
+            &-text {
+               font-weight: 500;
+               font-size: 14px;
+               line-height: 26px;
+               color: #A9AFB9;
+            }
+         }  
+      }
+      &-right {
+         flex-basis: 50%;
+         display: flex;
+         align-items: center;
+         gap: 0 40px;
+         .nav-bar {
+            &-menu {
+               display: flex;
+               gap: 0 40px;
+               &-item {
+                  &-link {
+                     font-weight: 400;
+                     font-size: 16px;
+                     line-height: 28px;
+                     text-align: center;
+                     color: #52575F;
+                  }
+                  .active {
+                     font-weight: 600;
+                     font-size: 16px;
+                     line-height: 28px;
+                     text-align: center;
+                     color: #3685FB;
+                     border-bottom: 2px solid $primary-color;
+                     border-radius: 2px;
+                     display: block;
+                     margin-right: 73%;
+                     content: " ";
+                  }
+               }
+            }
+         }
+         .contact {
+            width: 144px;
+            height: 49px;
+            background: #3685FB;
+            border-radius: 24.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &-text {
+               font-weight: 600;
+               font-size: 16px;
+               line-height: 28px;
+               text-align: center;
+               color: #FFFFFF;
+            }
+         }
+      }
+
+
+   }
+   // HERO TEXT
+   &-text {
+      position: absolute;
+      width: 470px;
+      height: 404px;
+      left: 835px;
+      top: 248px;
+      display: flex;
+      flex-direction: column;
+      .book-now {
+         font-family: 'Poppins';
+         font-style: normal;
+         font-weight: 600;
+         font-size: 18px;
+         line-height: 30px;
+         color: #14B8A7;
+      }
+      .heading {
+         font-family: $heading-font;
+         font-style: normal;
+         font-weight: 700;
+         font-size: 62px;
+         line-height: 72px;
+         letter-spacing: -0.02em;
+         color: #05101F;
+         margin-bottom: 22px;
+      }
+      .para {
+         flex-grow: 1;
+         font-family: 'Poppins';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 30px;
+         color: #52575F;
+      }
+      .button {
+         display: flex;
+         align-items: center;
+         &-left {
+            width: 180px;
+            height: 64px;
+            background: #3685FB;
+            border-radius: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+               font-weight: 600;
+               font-size: 18px;
+               line-height: 30px;
+               text-align: center;
+               color: #FFFFFF;
+            }
+         }
+         &-right {
+            width: 264px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-grow: 1;
+            gap: 0 30px;
+            &-icon {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               .one {
+                  width: 80px;
+                  height: 80px;
+               }
+               .two {
+                  margin-left: -33px;
+                  margin-top: 13px;
+               }
+               .three {
+                  margin-left: -40px;
+               }
+            }
+            &-text {
+               font-weight: 600;
+               font-size: 18px;
+               line-height: 30px;
+               text-align: center;
+               color: #05101F;
+            }
+         }
+      }
+   }
+   // HERO VECTOR1899
+   &-vector1899 {
+      position: absolute;
+      width: 154px;
+      height: 117px;
+      left: 547px;
+      top: 152px;
+   }
+   // HERO IMAGES
+   &-images {
+      width: 570px;
+      height: 600px;
+      .adventure1 {
+         z-index: 99999;
+         box-sizing: border-box;
+         position: absolute;
+         width: 270px;
+         height: 450px;
+         left: 435px;
+         top: 300px;
+      }
+      .adventure2 {
+         box-sizing: border-box;
+         position: absolute;
+         width: 370px;
+         height: 546px;
+         left: 135px;
+         top: 150px;
+      }
+   }
+}

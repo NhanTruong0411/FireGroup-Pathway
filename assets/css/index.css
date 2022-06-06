@@ -1,0 +1,1188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Sen:wght@700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  position: relative;
+  width: 1440px;
+  height: 4343px;
+  background: #FFFFFF;
+}
+
+.hero {
+  position: absolute;
+  width: 1440px;
+  height: 820px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(131.1deg, rgba(54, 133, 251, 0.05) 0%, rgba(54, 133, 251, 0) 73.29%);
+}
+.hero-menu {
+  position: absolute;
+  width: 1170px;
+  height: 50px;
+  left: 135px;
+  top: 36px;
+  display: flex;
+  justify-content: space-between;
+}
+.hero-menu-left {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+}
+.hero-menu-left .logo h1 {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+}
+.hero-menu-left .logo span {
+  color: #3685fb;
+}
+.hero-menu-left .search-bar {
+  width: 288px;
+  height: 50px;
+  border: 1px solid #E6E9ED;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+.hero-menu-left .search-bar-icon i {
+  color: #3685fb;
+  margin-left: 18px;
+  margin-right: 16px;
+}
+.hero-menu-left .search-bar-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  color: #A9AFB9;
+}
+.hero-menu-right {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+}
+.hero-menu-right .nav-bar-menu {
+  display: flex;
+  gap: 0 40px;
+}
+.hero-menu-right .nav-bar-menu-item-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #52575F;
+}
+.hero-menu-right .nav-bar-menu-item .active {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #3685FB;
+  border-bottom: 2px solid #3685fb;
+  border-radius: 2px;
+  display: block;
+  margin-right: 73%;
+  content: " ";
+}
+.hero-menu-right .contact {
+  width: 144px;
+  height: 49px;
+  background: #3685FB;
+  border-radius: 24.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-menu-right .contact-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.hero-text {
+  position: absolute;
+  width: 470px;
+  height: 404px;
+  left: 835px;
+  top: 248px;
+  display: flex;
+  flex-direction: column;
+}
+.hero-text .book-now {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #14B8A7;
+}
+.hero-text .heading {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+  color: #05101F;
+  margin-bottom: 22px;
+}
+.hero-text .para {
+  flex-grow: 1;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #52575F;
+}
+.hero-text .button {
+  display: flex;
+  align-items: center;
+}
+.hero-text .button-left {
+  width: 180px;
+  height: 64px;
+  background: #3685FB;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text .button-left a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.hero-text .button-right {
+  width: 264px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+  gap: 0 30px;
+}
+.hero-text .button-right-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text .button-right-icon .one {
+  width: 80px;
+  height: 80px;
+}
+.hero-text .button-right-icon .two {
+  margin-left: -33px;
+  margin-top: 13px;
+}
+.hero-text .button-right-icon .three {
+  margin-left: -40px;
+}
+.hero-text .button-right-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #05101F;
+}
+.hero-vector1899 {
+  position: absolute;
+  width: 154px;
+  height: 117px;
+  left: 547px;
+  top: 152px;
+}
+.hero-images {
+  width: 570px;
+  height: 600px;
+}
+.hero-images .adventure1 {
+  z-index: 99999;
+  box-sizing: border-box;
+  position: absolute;
+  width: 270px;
+  height: 450px;
+  left: 435px;
+  top: 300px;
+}
+.hero-images .adventure2 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 370px;
+  height: 546px;
+  left: 135px;
+  top: 150px;
+}
+
+.destinations {
+  position: absolute;
+  width: 1170px;
+  height: 593px;
+  left: 135px;
+  top: 990px;
+}
+.destinations .text {
+  position: absolute;
+  width: 507px;
+  height: 124px;
+  left: 0px;
+  top: 0px;
+}
+.destinations .text h2 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: -0.02em;
+  color: #05101F;
+  margin-bottom: 16px;
+}
+.destinations .text p {
+  width: 507px;
+  height: 56px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #52575F;
+}
+.destinations .icons {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 42;
+  right: 0;
+}
+.destinations .icons .icon-inactive-circle {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 58px;
+  top: 42px;
+}
+.destinations .icons .icon-inactive-arrow {
+  position: absolute;
+  width: 6px;
+  height: 12px;
+  right: 75px;
+  top: 56px;
+}
+.destinations .icons .icon-active-circle {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0px;
+  top: 42px;
+}
+.destinations .icons .icon-active-arrow {
+  position: absolute;
+  width: 6px;
+  height: 12px;
+  right: 17px;
+  top: 56px;
+}
+.destinations .images {
+  position: absolute;
+  top: 179px;
+  width: 240px;
+  display: flex;
+  gap: 0 30px;
+}
+.destinations .images .card2 .base {
+  position: absolute;
+  top: 304px;
+  left: 316px;
+  width: 238px;
+  height: 94px;
+  background: rgba(5, 16, 31, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+}
+.destinations .images .card2 .image-texts-above {
+  position: absolute;
+  top: 322px;
+  left: 355px;
+  width: 160px;
+  height: 28px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #EFF3FF;
+}
+.destinations .images .card2 .image-texts-under {
+  position: absolute;
+  top: 352px;
+  left: 396px;
+  width: 77px;
+  height: 28px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.package {
+  position: absolute;
+  width: 1440px;
+  height: 952px;
+  left: 0px;
+  top: 1753px;
+}
+.package .bg {
+  position: absolute;
+  width: 1440px;
+  height: 952px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(131.1deg, rgba(54, 133, 251, 0.05) 0%, rgba(54, 133, 251, 0.03) 73.29%);
+}
+.package .text {
+  position: absolute;
+  width: 507px;
+  height: 124px;
+  left: 466px;
+  top: 96px;
+}
+.package .text h2 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #05101F;
+  margin-bottom: 16px;
+}
+.package .text p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #52575F;
+}
+.package .image-info {
+  position: absolute;
+  top: 275px;
+  left: 135px;
+}
+.package .image-info img {
+  position: absolute;
+  width: 370px;
+  height: 320px;
+}
+.package .image-info h3 {
+  width: 288px;
+  height: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+.package .image-info .rating {
+  position: absolute;
+  width: 47px;
+  height: 28px;
+}
+.package .image-info .rating img {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+}
+.package .image-info .rating span {
+  position: absolute;
+  width: 23px;
+  height: 28px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FEA31B;
+}
+.package .image-info p {
+  position: absolute;
+  width: 88px;
+  height: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #6C7B83;
+}
+.package .image-info p b {
+  font-weight: 600;
+  color: #000000;
+}
+.package .image-info .button {
+  position: absolute;
+  width: 110px;
+  height: 36px;
+}
+.package .image-info .button-base {
+  position: absolute;
+  width: 110px;
+  height: 36px;
+  background: #3685FB;
+  border-radius: 18px;
+}
+.package .image-info .button i {
+  position: absolute;
+  width: 70px;
+  height: 26px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+.package .image-info .base {
+  position: absolute;
+  width: 370px;
+  height: 479px;
+  background: #FFFFFF;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  z-index: -1;
+}
+.package .image-info .card1 {
+  position: absolute;
+  width: 370px;
+  height: 479px;
+  left: 0px;
+  top: 0px;
+}
+.package .image-info .card1 h3 {
+  position: absolute;
+  top: 348px;
+  left: 22px;
+}
+.package .image-info .card1 .rating {
+  left: 22px;
+  bottom: 71px;
+}
+.package .image-info .card1 .rating img {
+  top: 5px;
+  left: 0;
+}
+.package .image-info .card1 .rating span {
+  left: 24px;
+}
+.package .image-info .card1 p {
+  left: 22px;
+  bottom: 33px;
+}
+.package .image-info .card1 .button {
+  right: 22px;
+  bottom: 30px;
+}
+.package .image-info .card1 .button i {
+  top: 5px;
+  left: 20px;
+}
+.package .image-info .card1 .base {
+  top: 0;
+  left: 0;
+}
+.package .image-info .card2 {
+  position: absolute;
+  width: 370px;
+  height: 479px;
+  left: 400px;
+  top: 0px;
+}
+.package .image-info .card2 h3 {
+  position: absolute;
+  top: 348px;
+  left: 22px;
+}
+.package .image-info .card2 .rating {
+  left: 22px;
+  bottom: 71px;
+}
+.package .image-info .card2 .rating img {
+  top: 5px;
+  left: 0;
+}
+.package .image-info .card2 .rating span {
+  left: 24px;
+}
+.package .image-info .card2 p {
+  left: 22px;
+  bottom: 33px;
+}
+.package .image-info .card2 .button {
+  right: 22px;
+  bottom: 30px;
+}
+.package .image-info .card2 .button i {
+  top: 5px;
+  left: 20px;
+}
+.package .image-info .card2 .base {
+  top: 0;
+  left: 0;
+}
+.package .image-info .card3 {
+  position: absolute;
+  width: 370px;
+  height: 479px;
+  left: 800px;
+  top: 0px;
+}
+.package .image-info .card3 h3 {
+  position: absolute;
+  top: 348px;
+  left: 22px;
+}
+.package .image-info .card3 .rating {
+  left: 22px;
+  bottom: 71px;
+}
+.package .image-info .card3 .rating img {
+  top: 5px;
+  left: 0;
+}
+.package .image-info .card3 .rating span {
+  left: 24px;
+}
+.package .image-info .card3 p {
+  left: 22px;
+  bottom: 33px;
+}
+.package .image-info .card3 .button {
+  right: 22px;
+  bottom: 30px;
+}
+.package .image-info .card3 .button i {
+  top: 5px;
+  left: 20px;
+}
+.package .image-info .card3 .base {
+  top: 0;
+  left: 0;
+}
+.package .package-button {
+  position: absolute;
+  width: 180px;
+  height: 64px;
+  left: 630px;
+  bottom: 96px;
+}
+.package .package-button-base {
+  width: 180px;
+  height: 64px;
+  background: #3685FB;
+  border-radius: 32px;
+}
+.package .package-button h3 {
+  position: absolute;
+  width: 72px;
+  height: 30px;
+  left: 53px;
+  top: 17px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.gallery {
+  position: absolute;
+  width: 1170px;
+  height: 554px;
+  left: 135px;
+  top: 2875px;
+}
+.gallery .images {
+  position: absolute;
+  width: 570px;
+  height: 554px;
+  left: 0;
+  top: 0;
+}
+.gallery .images .left {
+  position: absolute;
+  width: 270px;
+  height: 402px;
+  left: 0;
+  top: 81px;
+}
+.gallery .images .above {
+  position: absolute;
+  width: 270px;
+  height: 200px;
+  right: 0;
+  top: 0;
+}
+.gallery .images .under {
+  position: absolute;
+  width: 270px;
+  height: 324px;
+  right: 0;
+  bottom: 0;
+}
+.gallery .texts {
+  position: absolute;
+  width: 470px;
+  height: 306px;
+  right: 0;
+  top: 124px;
+}
+.gallery .texts h2 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: -0.02em;
+  color: #05101F;
+  margin-bottom: 16px;
+}
+.gallery .texts p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #52575F;
+  margin-bottom: 38px;
+}
+.gallery .texts .button {
+  position: absolute;
+  width: 180px;
+  height: 64px;
+  top: 242px;
+  left: 0;
+}
+.gallery .texts .button .base {
+  position: absolute;
+  width: 180px;
+  height: 64px;
+  left: 0;
+  bottom: 0;
+  background: #3685FB;
+  border-radius: 32px;
+}
+.gallery .texts .button h3 {
+  position: absolute;
+  width: 72px;
+  height: 30px;
+  left: 53px;
+  top: 17px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 999;
+}
+
+.newsletter {
+  position: absolute;
+  width: 1440px;
+  height: 316px;
+  left: 0px;
+  top: 3599px;
+}
+.newsletter .base {
+  position: absolute;
+  width: 1440px;
+  height: 316px;
+  left: 0px;
+  top: 0px;
+  background: #F5F9FF;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.newsletter .texts {
+  position: absolute;
+  width: 573px;
+  height: 124px;
+  left: 135px;
+  top: 96px;
+  z-index: 99999;
+}
+.newsletter .texts h2 {
+  width: 573px;
+  height: 52px;
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: -0.02em;
+  color: #05101F;
+  margin-bottom: 16px;
+}
+.newsletter .texts p {
+  width: 507px;
+  height: 56px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #52575F;
+}
+.newsletter .bar {
+  position: absolute;
+  width: 470px;
+  height: 64px;
+  left: 835px;
+  top: 126px;
+}
+.newsletter .bar .mail {
+  position: absolute;
+  width: 470px;
+  height: 64px;
+  left: 0;
+  top: 0;
+  background: #FFFFFF;
+  border-radius: 33px;
+}
+.newsletter .bar .button {
+  position: absolute;
+  width: 160px;
+  height: 64px;
+  right: 0;
+  top: 0;
+}
+.newsletter .bar .button-text {
+  z-index: 99999;
+  position: absolute;
+  top: 18px;
+  left: 34px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 99999999;
+}
+.newsletter .bar .button-base {
+  position: absolute;
+  right: 0;
+  width: 160px;
+  height: 64px;
+  background: #3685FB;
+  border-radius: 32px;
+  z-index: 99999;
+}
+.newsletter .circle-left {
+  position: absolute;
+  width: 163px;
+  height: 163px;
+  left: 54px;
+  top: 77px;
+}
+.newsletter .circle-right {
+  position: absolute;
+  width: 185px;
+  height: 248px;
+  right: 62px;
+  top: 35px;
+}
+.newsletter .circle-right .one {
+  position: absolute;
+  width: 163px;
+  height: 163px;
+  left: 49.04px;
+  top: 7.32px;
+}
+.newsletter .circle-right .two {
+  position: absolute;
+  width: 163px;
+  height: 163px;
+  left: 0px;
+  top: 80.15px;
+}
+
+.footer {
+  position: absolute;
+  width: 1440px;
+  height: 428px;
+  left: 0px;
+  top: 3915px;
+}
+.footer .bg {
+  position: absolute;
+  width: 1440px;
+  height: 428px;
+  left: 0px;
+  top: 0px;
+  background: #0E2241;
+}
+.footer .intro {
+  position: absolute;
+  width: 109px;
+  height: 34px;
+  left: 135px;
+  top: 96px;
+}
+.footer .intro .logo {
+  position: absolute;
+  width: 109px;
+  height: 34px;
+  left: 0;
+  top: 0;
+}
+.footer .intro .logo h3 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #FFFFFF;
+  margin-bottom: 18px;
+}
+.footer .intro p {
+  position: absolute;
+  width: 267px;
+  height: 78px;
+  top: 52px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #A3A8B1;
+}
+.footer .intro .social {
+  position: absolute;
+  width: 111px;
+  height: 15px;
+  left: 0;
+  top: 148px;
+}
+.footer .intro .social .instagram {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 96px;
+}
+.footer .intro .social .linkedin {
+  position: absolute;
+  left: 63px;
+}
+.footer .intro .social .facebook {
+  position: absolute;
+  left: 36px;
+}
+.footer .intro .social .twitter {
+  position: absolute;
+  width: 18px;
+  height: 15px;
+  left: 0;
+}
+.footer .company {
+  position: absolute;
+  width: 130px;
+  height: 211px;
+  left: 547px;
+  top: 96px;
+}
+.footer .company h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.footer .company .rectangle {
+  position: absolute;
+  width: 130px;
+  height: 1px;
+  top: 42px;
+  background: #394659;
+}
+.footer .company p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #A3A8B1;
+}
+.footer .company a {
+  position: absolute;
+}
+.footer .company .one {
+  top: 71px;
+}
+.footer .company .two {
+  top: 109px;
+}
+.footer .company .three {
+  top: 147px;
+}
+.footer .company .four {
+  top: 185px;
+}
+.footer .support {
+  position: absolute;
+  width: 137px;
+  height: 211px;
+  left: 807px;
+  top: 96px;
+}
+.footer .support h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.footer .support .rectangle {
+  position: absolute;
+  width: 130px;
+  height: 1px;
+  top: 42px;
+  background: #394659;
+}
+.footer .support p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #A3A8B1;
+}
+.footer .support a {
+  position: absolute;
+}
+.footer .support .one {
+  top: 71px;
+}
+.footer .support .two {
+  top: 109px;
+}
+.footer .support .three {
+  top: 147px;
+}
+.footer .support .four {
+  top: 185px;
+}
+.footer .address {
+  position: absolute;
+  width: 231px;
+  height: 199px;
+  left: 1074px;
+  top: 96px;
+}
+.footer .address h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.footer .address .rectangle {
+  position: absolute;
+  width: 130px;
+  height: 1px;
+  top: 42px;
+  background: #394659;
+}
+.footer .address p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #A3A8B1;
+  font-weight: 600;
+}
+.footer .address a {
+  position: absolute;
+}
+.footer .address .one {
+  top: 71px;
+}
+.footer .address .two {
+  top: 135px;
+}
+.footer .address .three {
+  top: 173px;
+}
+.footer .shape {
+  position: absolute;
+  width: 1170px;
+  height: 1px;
+  left: 135px;
+  top: 345px;
+  background: #394659;
+}
+.footer .copyright {
+  position: absolute;
+  width: 357px;
+  height: 26px;
+  left: 541px;
+  bottom: 25px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: #878E99;
+}
+
+/*# sourceMappingURL=index.css.map */
